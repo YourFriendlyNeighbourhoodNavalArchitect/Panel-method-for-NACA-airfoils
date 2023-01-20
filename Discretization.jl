@@ -55,7 +55,7 @@ begin
 			n = (xData[counter]*yData[counter + 1] - xData[counter + 1]*yData[counter])/(xData[counter + 1] - xData[counter]);
 			yPanel[i] = m*xPanel[i] - n;
 		end
-    #Loop utilizes simple linear algebra equations to compute the panel midpoints coordinates and angles between the panels and the positive x-axis.
+		#Loop utilizes simple linear algebra equations to compute the panel midpoints coordinates and angles between the panels and the positive x-axis.
 		for i in 1:(length(xPanel) - 1)
 			xM[i] = (xPanel[i + 1] + xPanel[i])/2;
 			yM[i] = (yPanel[i + 1] + yPanel[i])/2;
