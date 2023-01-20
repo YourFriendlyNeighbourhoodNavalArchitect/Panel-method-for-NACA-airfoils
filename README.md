@@ -7,4 +7,5 @@ Code calculates the pressure coefficient at each point on the airfoil and plots 
 Subsequently it constructs the velocity field of the flow around the airfoil.
 
 [1] Fundamentals of aerodynamics, J. Anderson
+
 [2] Foundations of aerodynamics, A. M. Kuethe
