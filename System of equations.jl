@@ -34,3 +34,12 @@ begin
 			A[length(xPanel), length(xPanel)] = A[length(xPanel), length(xPanel)] + vortexTangentialIntegral(1, i) + vortexTangentialIntegral((length(xPanel) - 1), i);
 		end
 	end
+	A[length(xPanel), length(xPanel)] = A[length(xPanel), length(xPanel)] + vortexTangentialIntegral((length(xPanel) - 1), 1) + vortexTangentialIntegral(1, (length(xPanel) - 1)) + 2pi;
+	#Then we populate the RHS matrix of known quantities.
+	B = zeros(length(xPanel), 1);
+	for i = 1:(length(xPanel) - 1)
+		B[i, 1] = -2pi*uInfinity*cos(convertAngle - φ[i]);
+	end
+	B[length(xPanel), 1] = -2pi*uInfinity*(sin(convertAngle - φ[1]) + sin(convertAngle - φ[(length(xPanel) - 1)]));
+	solutionMatrix = A\B;
+end
