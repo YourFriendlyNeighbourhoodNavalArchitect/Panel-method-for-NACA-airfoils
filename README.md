@@ -1,4 +1,4 @@
-# Panel-method-for-NACA-airfoils
+# Panel method for NACA airfoils
 The entire project was carried out in Julia, a high-performance dynamic programming language, suited for computational science.
 The code discretises airfoil into linear panels and utilizes the source/vortex method to model the flow around the airfoil.
 User inputs the shape of the airfoil as a .dat file and values for the freestream velocity and angle of attack.
