@@ -1,0 +1,10 @@
+[deps]
+PanelMethod = "c9b2b789-d669-4fca-8260-bbc2e20178a9"
+Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
+
+[sources]
+PanelMethod = {path = ".."}
+
+[compat]
+Plots = "1"
+julia = "1.10"
